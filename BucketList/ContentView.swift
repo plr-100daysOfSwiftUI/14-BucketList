@@ -48,6 +48,7 @@ struct ContentView: View {
 						.font(.title)
 						.clipShape(Circle())
 						.padding(.trailing)
+						.padding(.bottom)
 					}
 				}
 			} else {
