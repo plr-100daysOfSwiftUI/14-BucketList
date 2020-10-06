@@ -23,6 +23,9 @@ struct AuthenticateView: View {
 		.background(Color.blue)
 		.foregroundColor(.white)
 		.clipShape(Capsule())
+		.alert(isPresented: $showingAlert) {
+			Alert(title: Text("\(alertTitle)"), message: Text("\(alertMessage)"), dismissButton: .default(Text("OK")))
+		}
 	}
 	
 	func authenticate() {
