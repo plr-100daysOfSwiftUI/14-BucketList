@@ -50,6 +50,9 @@ struct AuthenticateView: View {
 			}
 		} else {
 			// no biometrics
+			alertTitle = "No Biometrics"
+			alertMessage = error?.localizedDescription ?? "This device does not support Touch ID or Face ID"
+			showingAlert = true
 		}
 	}
 }
