@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import LocalAuthentication
 
 struct ContentView: View {
 	
@@ -17,38 +16,11 @@ struct ContentView: View {
 			if isUnlocked {
 				CompositeMapView()
 			} else {
-				Button("Unlock Places") {
-					self.authenticate()
-				}
-				.padding()
-				.background(Color.blue)
-				.foregroundColor(.white)
-				.clipShape(Capsule())
+				AuthenticateView(isUnlocked: $isUnlocked)
 			}
 		}
 	}
 	
-	func authenticate() {
-		let context = LAContext()
-		var error: NSError?
-		
-		if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-			let reason = "Please authenticate yourself to unlock your places."
-			
-			context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
-				
-				DispatchQueue.main.async {
-					if success {
-						self.isUnlocked = true
-					} else {
-						// error
-					}
-				}
-			}
-		} else {
-			// no biometrics
-		}
-	}
 }
 
 struct ContentView_Previews: PreviewProvider {
