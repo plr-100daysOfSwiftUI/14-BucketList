@@ -42,6 +42,9 @@ struct AuthenticateView: View {
 						isUnlocked = true
 					} else {
 						// error
+						alertTitle = "Authentication Error"
+						alertMessage = authenticationError?.localizedDescription ?? "Unknown error"
+						showingAlert = true
 					}
 				}
 			}
