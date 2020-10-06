@@ -18,6 +18,7 @@
 		8B2CD28C252B93C70005E64A /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2CD287252B93C60005E64A /* Result.swift */; };
 		8B2CD28D252B93C70005E64A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2CD288252B93C70005E64A /* MapView.swift */; };
 		8B2CD28E252B93C70005E64A /* MKPointAnnotation-Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2CD289252B93C70005E64A /* MKPointAnnotation-Codable.swift */; };
+		8B733C26252C49F9003E0D7F /* CompositeMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B733C25252C49F9003E0D7F /* CompositeMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		8B2CD288252B93C70005E64A /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8B2CD289252B93C70005E64A /* MKPointAnnotation-Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-Codable.swift"; sourceTree = "<group>"; };
 		8B733C22252C4054003E0D7F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8B733C25252C49F9003E0D7F /* CompositeMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			children = (
 				8B2CD27E252B939B0005E64A /* Info.plist */,
 				8B2CD270252B939A0005E64A /* AppDelegate.swift */,
+				8B733C25252C49F9003E0D7F /* CompositeMapView.swift */,
 				8B2CD274252B939A0005E64A /* ContentView.swift */,
 				8B2CD285252B93C60005E64A /* EditView.swift */,
 				8B2CD288252B93C70005E64A /* MapView.swift */,
@@ -165,6 +168,7 @@
 				8B2CD28D252B93C70005E64A /* MapView.swift in Sources */,
 				8B2CD28C252B93C70005E64A /* Result.swift in Sources */,
 				8B2CD271252B939A0005E64A /* AppDelegate.swift in Sources */,
+				8B733C26252C49F9003E0D7F /* CompositeMapView.swift in Sources */,
 				8B2CD273252B939A0005E64A /* SceneDelegate.swift in Sources */,
 				8B2CD28A252B93C70005E64A /* EditView.swift in Sources */,
 				8B2CD28B252B93C70005E64A /* MKPointAnnotation-ObservableObject.swift in Sources */,
