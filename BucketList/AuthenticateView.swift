@@ -11,6 +11,9 @@ import LocalAuthentication
 struct AuthenticateView: View {
 	
 	@Binding var isUnlocked: Bool
+	@State private var showingAlert = false
+	@State private var alertTitle = "Title"
+	@State private var alertMessage = "Message"
 	
 	var body: some View {
 		Button("Unlock Places") {
