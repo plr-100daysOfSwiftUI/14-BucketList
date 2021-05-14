@@ -17,6 +17,7 @@ struct MapView: UIViewRepresentable {
 	
 	func makeUIView(context:Context) -> MKMapView {
 		let mapView = MKMapView()
+		// TODO: Display the user's location as beginning reference point
 		mapView.delegate = context.coordinator
 		return mapView
 	}

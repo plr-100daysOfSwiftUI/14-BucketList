@@ -24,6 +24,7 @@ struct EditView: View {
 		NavigationView {
 			Form {
 				Section {
+					// TODO: Add a clear button to the text fields
 					TextField("Place name", text: $placemark.wrappedTitle)
 					TextField("Description", text: $placemark.wrappedSubtitle)
 				}
