@@ -2,6 +2,8 @@
 
 [Hacking with Swift: 100 Days of SwiftUI - Project 14][1]
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ### Challenges
 
 1. Our + button is rather hard to tap. Try moving all its modifiers to the image inside the button – what difference does it make, and can you think why?
